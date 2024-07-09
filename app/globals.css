@@ -1,17 +1,24 @@
+/* import base style from the Tailwind css. this include the styles for element like body, heading, and etc */
 @tailwind base;
+/* import components styles from css. This styles for form control, button, and other component */
 @tailwind components;
+/* import the utility styles from tailwind css. this include the utility classes for margin, padding, colors, etc. */
 @tailwind utilities;
 
+/* CSS Reset */
+
+/* Remove the default number input spinner button in forefox  */
 input[type='number'] {
   -moz-appearance: textfield;
   appearance: textfield;
 }
-
+/* Remove the inner spin button in Webkit browser like chrome and safari */
 input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
+/* remove the outer spin button in webkit browser like chrome and safari */
 input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
